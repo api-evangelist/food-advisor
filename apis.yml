@@ -1,7 +1,23 @@
 aid: food-advisor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/food-advisor.png
 name: Food Advisor
-description: Food Advisor is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Food Advisor (FoodAdvisor.my) is a Malaysia-based food discovery application founded
+  in 2014 by Kenny Hew and headquartered in Selangor, Malaysia. The service helps users find dishes
+  and restaurants by searching dish names as keywords alongside locations. It is backed by 500 Global
+  through the 500 Durians Southeast Asia fund. As of this profile the public web presence at
+  foodadvisor.my returns HTTP 404 and no public API, developer portal, SDK, or documentation could be
+  located for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/food-advisor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Food
+- Food Discovery
+- Restaurants
+- Mobile App
+- Malaysia
+- Startup
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/food-advisor-domain-security.yml
 - type: Website
   url: https://foodadvisor.my
+- type: LinkedIn
+  url: https://www.linkedin.com/company/foodadvisor-my
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/foodadvisor
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
